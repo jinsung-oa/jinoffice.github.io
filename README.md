@@ -1,2 +1,0 @@
-# jinoffice.github.io
-jinoffice
