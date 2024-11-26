@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="kr">
+    
+    
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>견적서</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    
+    
+  <style>
+      
+    * {
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f7f9fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+      flex-direction: column;
+    }
+
+      
+    .main {
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 2em;
+    }
+      
+    #sumit {
+      margin-right: 10px;
+      background-color:  #4caf50;
+      color: #fff;
+      border: none;
+      padding: 4px 12px;
+      border-radius: 5px;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    #sumit:hover {
+      background-color: #43a047;
+    }
+      
+     #pass {
+          border: none;
+          font-size: 1.1em;
+          font-weight : bold ;
+
+          width:120px; 
+          height:30px;
+      }
+      
+      #pass:focus {outline:none;}
+      
+      
+      .pass {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-left: 10px;
+          
+      margin-right: 10px;
+      font-size: 1.1em;
+    }
+  </style>
+    
+</head>
+    
+    <body>
+        
+
+    <div class="main">
+        <form name="loginForm">
+            
+            <p style="margin-bottom:20;"> 비밀번호 :
+                <input name="pass" id="pass" type="password" size="15">
+                <input type="button" id="sumit" value="확인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;"><br>
+                
+        </form>
+    </div>
+
+
+    
+    <script language="javascript">
+        
+        function login_page(form) {
+            //원하는 패스워드를 설정
+            if (form.pass.value=="1234") {
+                //패스워드가 일치하면 이동할 문서의 경로
+                location="./main.html"
+            } else {
+                alert("패스워드가 틀립니다.")
+            }
+        }
+    
+        </script>
+      </body>
+</html>
