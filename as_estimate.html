@@ -213,7 +213,7 @@
       background-color: #ff5252;
     }
       
-     #input {
+     #total {
           border: none;
           font-size: 1.1em;
           font-weight : bold ;
@@ -222,7 +222,7 @@
           height:30px;
       }
       
-      #input:focus {outline:none;}
+      #total:focus {outline:none;}
       
       #inputline {
           border: none;
@@ -255,9 +255,9 @@
 .accordion-container { 
   width: 300px; 
   margin: 30px auto; 
-  border: 2px solid #181818; 
+  border: 2px solid #e9e9e9; 
   border-radius: 4px;
-  box-shadow: 0 5px 5px -5px #333;
+  box-shadow: 0 5px 5px -5px #f2f2f2;
   list-style-type: none;     
   padding: 0;  
   ul {padding-left: 0; }  
@@ -268,13 +268,13 @@
       height: 40px;
       font-size: 18px;
       line-height: 40px;
-      background: #181818;
-      color: #fff;
+      background: #e9e9e9;
+      color: #333;
       position: relative;
       display: block;
       cursor: pointer;
       &:hover {
-        background: #000000;
+        background: #f2f2f2;
       }
     }    
     .accordion-items {
@@ -432,53 +432,53 @@
     <input type="radio" name="a-toggle" id="one" checked style="display: none" >      
     <label for="one" class="accordion-title">화상</label>
     <ul class="accordion-items">    
-      <li><input type="checkbox" id="viewch1"  onChange="calculatePay()" name="price1" value="180000">
-          <label for="viewch1">현상기 수리</label>
+      <li><input type="checkbox" name="price1" id="price1" value="180000">
+          <label for="price1">현상기 수리</label>
       </li>                    
       <li> <b>현상기 교체 </b>
-          <input type="checkbox" id="viewch2">
-          <label for="viewch2" value="280000">기본</label>
-          <input type="checkbox" id="viewch3">
-          <label for="viewch3" value="300000">교세라 A3</label>
+          <input type="checkbox" name="price2" id="price2" value="280000">
+          <label for="price2">기본</label>
+          <input type="checkbox" name="price3" id="price3" value="300000">
+          <label for="price3">교세라</label>
         </li>   
       <li> <b>드럼 수리 </b>
-          <input type="checkbox" id="viewch4k">
-          <label for="viewch4k" value="180000">K</label>
-          <input type="checkbox" id="viewch4c">
-          <label for="viewch4c" value="180000">C</label>
-          <input type="checkbox" id="viewch4m">
-          <label for="viewch4m" value="180000">M</label>
-          <input type="checkbox" id="viewch4y">
-          <label for="viewch4y" value="180000">Y</label>
+          <input type="checkbox"  name="price4" id="price4" value="180000">
+          <label for="price4" >K</label>
+          <input type="checkbox" name="price5" id="price5" value="180000">
+          <label for="price5" >C</label>
+          <input type="checkbox"  name="price6" id="price6" value="180000">
+          <label for="price6">M</label>
+          <input type="checkbox"  name="price7" id="price7" value="180000">
+          <label for="price7">Y</label>
         </li>      
       <li> <b>드럼 교체 </b>
-          <input type="checkbox" id="viewch5k">
-          <label for="viewch5k" value="250000">K</label>
-          <input type="checkbox" id="viewch5c">
-          <label for="viewch5c" value="250000">C</label>
-          <input type="checkbox" id="viewch5m">
-          <label for="viewch5m" value="250000">M</label>
-          <input type="checkbox" id="viewch5y">
-          <label for="viewch5y" value="250000">Y</label>
+          <input type="checkbox" name="price8" id="price8" value="250000">
+          <label for="price8">K</label>
+          <input type="checkbox"  name="price9" id="price9" value="250000">
+          <label for="price9">C</label>
+          <input type="checkbox" name="price10" id="price10" value="250000">
+          <label for="price10">M</label>
+          <input type="checkbox" name="price11" id="price11" value="250000">
+          <label for="price11">Y</label>
         </li>  
       <li> <b>드럼 수리 M5526 </b>
-          <input type="checkbox" id="viewch6k">
-          <label for="viewch6k" value="80000">K</label>
-          <input type="checkbox" id="viewch6c">
-          <label for="viewch6c" value="80000">C</label>
-          <input type="checkbox" id="viewch6m">
-          <label for="viewch6m" value="80000">M</label>
-          <input type="checkbox" id="viewch6y">
-          <label for="viewch6y" value="80000">Y</label>
+          <input type="checkbox" name="price12" id="price12" value="80000">
+          <label for="price12">K</label>
+          <input type="checkbox" name="price13" id="price13" value="80000">
+          <label for="price13">C</label>
+          <input type="checkbox" name="price14" id="price14" value="80000">
+          <label for="price14">M</label>
+          <input type="checkbox" name="price15" id="price15" value="80000">
+          <label for="price15">Y</label>
         </li> 
-      <li><input type="checkbox" id="viewch7">
-          <label for="viewch7" value="380000">드럼 교체 (교세라 A3흑백)</label>
+      <li><input type="checkbox" name="price16" id="price16" value="300000">
+          <label for="price16">드럼 교체 (교세라 A3흑백)</label>
       </li>   
-      <li><input type="checkbox" id="viewch8">
-          <label for="viewch8" value="60000">폐토너통 수리</label>
+      <li><input type="checkbox" name="price17" id="price17" value="60000">
+          <label for="price17">폐토너통 수리</label>
       </li>    
-      <li><input type="checkbox" id="viewch9">
-          <label for="viewch9" value="80000">폐토너통 교체</label>
+      <li><input type="checkbox" name="price18" id="price18" value="80000">
+          <label for="price18">폐토너통 교체</label>
       </li>  
     </ul>      
   </li>
@@ -486,28 +486,28 @@
     <input id="two" type="radio" name="a-toggle" style="display: none">      
     <label for="two" class="accordion-title">잼</label>
     <ul class="accordion-items">
-      <li><input type="checkbox" id="jamch1">
-          <label for="jamch1" value="250000">정착기 수리</label></li>                     
-      <li><input type="checkbox" id="jamch2">
-          <label for="jamch2" value="380000">정착기 교체</label></li>     
-      <li><input type="checkbox" id="jamch3">
-          <label for="jamch3" value="180000">이미지벨트 수리</label></li>                     
-      <li><input type="checkbox" id="jamch4">
-          <label for="jamch4" value="350000">이미지벨트 교체</label></li>     
-      <li><input type="checkbox" id="jamch5">
-          <label for="jamch5" value="150000">ADF 수리</label>
+      <li><input type="checkbox" name="price19" id="price19" value="250000">
+          <label for="price19">정착기 수리</label></li>                     
+      <li><input type="checkbox" name="price20" id="price20" value="380000">
+          <label for="price20">정착기 교체</label></li>     
+      <li><input type="checkbox" name="price21" id="price21" value="180000">
+          <label for="price21">이미지벨트 수리</label></li>                     
+      <li><input type="checkbox" name="price22" id="price22" value="350000">
+          <label for="price22">이미지벨트 교체</label></li>     
+      <li><input type="checkbox" name="price23" id="price23" value="150000">
+          <label for="price23">ADF 수리</label>
       </li>    
-      <li><input type="checkbox" id="jamch6">
-          <label for="jamch6" value="280000">ADF 교체</label>
+      <li><input type="checkbox" name="price24" id="price24" value="280000">
+          <label for="price24">ADF 교체</label>
       </li>
       <li> <b>급지부 교체 </b>
-          <input type="checkbox" id="jamch7">
-          <label for="jamch7" value="180000">A3</label>
-          <input type="checkbox" id="jamch8">
-          <label for="jamch8" value="120000">A4</label>
+          <input type="checkbox" name="price25" id="price25" value="180000">
+          <label for="price25">A3</label>
+          <input type="checkbox" name="price26" id="price26" value="120000">
+          <label for="price26">A4</label>
         </li>   
-      <li><input type="checkbox" id="jamch9">
-          <label for="jamch9" value="120000">클러치 교체</label></li>      
+      <li><input type="checkbox" name="price27" id="price27" value="120000">
+          <label for="price27">클러치 교체</label></li>      
     </ul>      
   </li>  
   <li class="accordion-category">
@@ -515,62 +515,62 @@
     <label for="tre" class="accordion-title">토너</label>
     <ul class="accordion-items">
       <li> <b>신도리코 </b>
-          <input type="checkbox" id="tonch1k">
-          <label for="tonch1k" value="80000">K</label>
-          <input type="checkbox" id="tonch1c">
-          <label for="tonch1c" value="100000">C</label>
-          <input type="checkbox" id="tonch1m">
-          <label for="tonch1m" value="100000">M</label>
-          <input type="checkbox" id="tonch1y">
-          <label for="tonch1y" value="100000">Y</label>
+          <input type="checkbox" name="price28" id="price28" value="80000">
+          <label for="price28">K</label>
+          <input type="checkbox" name="price29" id="price29" value="100000">
+          <label for="price29">C</label>
+          <input type="checkbox" name="price30" id="price30" value="100000">
+          <label for="price30">M</label>
+          <input type="checkbox" name="price31" id="price31" value="100000">
+          <label for="price31">Y</label>
         </li>  
       <li> <b>교세라(A3컬러) </b>
-          <input type="checkbox" id="tonch2k">
-          <label for="tonch2k" value="100000">K</label>
-          <input type="checkbox" id="tonch2c">
-          <label for="tonch2c" value="100000">C</label>
-          <input type="checkbox" id="tonch2m">
-          <label for="tonch2m" value="100000">M</label>
-          <input type="checkbox" id="tonch2y">
-          <label for="tonch2y" value="100000">Y</label>
+          <input type="checkbox" name="price32" id="price32" value="100000">
+          <label for="price32">K</label>
+          <input type="checkbox" name="price33" id="price33" value="100000">
+          <label for="price33">C</label>
+          <input type="checkbox" name="price34" id="price34" value="100000">
+          <label for="price34">M</label>
+          <input type="checkbox" name="price35" id="price35" value="100000">
+          <label for="price35">Y</label>
         </li>     
       <li> <b>교세라(A3흑백) </b>
-          <input type="checkbox" id="tonch3">
-          <label for="tonch3" value="80000">K</label>
+          <input type="checkbox" name="price36" id="price36" value="80000">
+          <label for="price36">K</label>
         </li>  
       <li> <b>교세라(M5526) </b>
-          <input type="checkbox" id="tonch4k">
-          <label for="tonch4k" value="40000">K</label>
-          <input type="checkbox" id="tonch4c">
-          <label for="tonch4c" value="40000">C</label>
-          <input type="checkbox" id="tonch4m">
-          <label for="tonch4m" value="40000">M</label>
-          <input type="checkbox" id="tonch4y">
-          <label for="tonch4y" value="40000">Y</label>
+          <input type="checkbox" name="price37" id="price37" value="40000">
+          <label for="price37">K</label>
+          <input type="checkbox" name="price38" id="price38" value="40000">
+          <label for="price38">C</label>
+          <input type="checkbox" name="price39" id="price39" value="40000">
+          <label for="price39">M</label>
+          <input type="checkbox" name="price40" id="price40" value="40000">
+          <label for="price40">Y</label>
         </li>  
       <li> <b>교세라(3145) </b>
-          <input type="checkbox" id="tonch5k">
-          <label for="tonch5k" value="50000">K</label>
+          <input type="checkbox" name="price41" id="price41" value="50000">
+          <label for="price41">K</label>
         </li>  
       <li> <b>제록스 </b>
-          <input type="checkbox" id="tonch6k">
-          <label for="tonch6k" value="100000">K</label>
-          <input type="checkbox" id="tonch6c">
-          <label for="tonch6c" value="120000">C</label>
-          <input type="checkbox" id="tonch6m">
-          <label for="tonch6m" value="120000">M</label>
-          <input type="checkbox" id="tonch6y">
-          <label for="tonch6y" value="120000">Y</label>
+          <input type="checkbox" name="price42" id="price42" value="100000">
+          <label for="price42">K</label>
+          <input type="checkbox" name="price43" id="price43" value="120000">
+          <label for="price43">C</label>
+          <input type="checkbox" name="price44" id="price44" value="120000">
+          <label for="price44">M</label>
+          <input type="checkbox" name="price45" id="price45" value="120000">
+          <label for="price45">Y</label>
         </li>  
       <li> <b>캐논 </b>
-          <input type="checkbox" id="tonch7k">
-          <label for="tonch7k" value="100000">K</label>
-          <input type="checkbox" id="tonch7c">
-          <label for="tonch7c" value="120000">C</label>
-          <input type="checkbox" id="tonch7m">
-          <label for="tonch7m" value="120000">M</label>
-          <input type="checkbox" id="tonch7y">
-          <label for="tonch7y" value="120000">Y</label>
+          <input type="checkbox" name="price46" id="price46" value="100000">
+          <label for="price46">K</label>
+          <input type="checkbox" name="price47" id="price47" value="120000">
+          <label for="price47">C</label>
+          <input type="checkbox" name="price48" id="price48" value="120000">
+          <label for="price48">M</label>
+          <input type="checkbox" name="price49" id="price49" value="120000">
+          <label for="price49">Y</label>
         </li>  
     </ul>
     </li>
@@ -579,73 +579,84 @@
     <label for="for" class="accordion-title">잉크젯</label>
     <ul class="accordion-items">
       <li> <b>잉크판매 </b>
-          <input type="checkbox" id="inkch1k">
-          <label for="inkch1k" value="40000">K</label>
-          <input type="checkbox" id="inkch1c">
-          <label for="inkch1c" value="40000">C</label>
-          <input type="checkbox" id="inkch1m">
-          <label for="inkch1m" value="40000">M</label>
-          <input type="checkbox" id="inkch1y">
-          <label for="inkch1y" value="40000">Y</label>
+          <input type="checkbox" name="price50" id="price50" value="40000">
+          <label for="price50">K</label>
+          <input type="checkbox"name="price51" id="price51" value="40000">
+          <label for="price51">C</label>
+          <input type="checkbox" name="price52" id="price52" value="40000">
+          <label for="price52">M</label>
+          <input type="checkbox" name="price53" id="price53" value="40000">
+          <label for="price53">Y</label>
         </li>     
       <li> <b>잉크충전 (full) </b>
-          <input type="checkbox" id="inkch2k">
-          <label for="inkch2k" value="40000">K</label>
-          <input type="checkbox" id="inkch2c">
-          <label for="inkch2c" value="40000">C</label>
-          <input type="checkbox" id="inkch2m">
-          <label for="inkch2m" value="40000">M</label>
-          <input type="checkbox" id="inkch2y">
-          <label for="inkch2y" value="40000">Y</label>
+          <input type="checkbox" name="price54" id="price54" value="40000">
+          <label for="price54">K</label>
+          <input type="checkbox" name="price55" id="price55" value="40000">
+          <label for="price55">C</label>
+          <input type="checkbox" name="price56" id="price56" value="40000">
+          <label for="price56">M</label>
+          <input type="checkbox" name="price57" id="price57" value="40000">
+          <label for="price57">Y</label>
         </li>   
-      <li> <b>잉크충전 </b><input type="checkbox" id="inkch3k">
-          <label for="inkch3k" value="20000">K</label>
-          <input type="checkbox" id="inkch3c">
-          <label for="inkch3c" value="20000">C</label>
-          <input type="checkbox" id="inkch3m">
-          <label for="inkch3m" value="20000">M</label>
-          <input type="checkbox" id="inkch3y">
-          <label for="inkch3y" value="20000">Y</label>
+      <li> <b>잉크충전 </b>
+          <input type="checkbox" name="price58" id="price58" value="20000">
+          <label for="price58">K</label>
+          <input type="checkbox" name="price59" id="price59" value="20000">
+          <label for="price59">C</label>
+          <input type="checkbox" name="price60" id="price60" value="20000">
+          <label for="price60">M</label>
+          <input type="checkbox" name="price61" id="price61" value="20000">
+          <label for="price61">Y</label>
         </li> 
-      <li><input type="checkbox" id="inkch4">
-          <label for="inkch4" value="180000">공급기 교체</label></li>   
-      <li><input type="checkbox" id="inkch5">
-          <label for="inkch5" value="80000">카트리지 교체</label></li>   
-      <li><input type="checkbox" id="inkch6">
-          <label for="inkch6" value="120000">헤드 수리</label></li>   
-      <li><input type="checkbox" id="inkch7">
-          <label for="inkch7" value="280000">헤드 교체</label></li>  
+      <li><input type="checkbox" name="price62" id="price62" value="180000">
+          <label for="price62">공급기 교체</label></li>   
+      <li><input type="checkbox" name="price63" id="price63" value="80000">
+          <label for="price63">카트리지 교체</label></li>   
+      <li><input type="checkbox" name="price64" id="price64" value="120000">
+          <label for="price64">헤드 수리</label></li>   
+      <li><input type="checkbox" name="price65" id="price65" value="280000">
+          <label for="price65">헤드 교체</label></li>  
     </ul>
     </li>
   <li class="accordion-category">
     <input id="fiv" type="radio" name="a-toggle" style="display: none">      
     <label for="fiv" class="accordion-title">공임비</label>
     <ul class="accordion-items">
-      <li><input type="checkbox" id="humch1a3">
-          <label for="humch1a3" value="60000">출장기술료(A3복합기)</label></li>          
-      <li><input type="checkbox" id="humch1a4">
-          <label for="humch1a4" value="40000">출장기술료(A4복합기)</label></li>   
-      <li><input type="checkbox" id="humch155">
-          <label for="humch155" value="50000">출장기술료(M5526/P3145)</label></li>   
-      <li><input type="checkbox" id="humch21">
-          <label for="humch21" value="30000">원격(PC 4대 이내)</label></li>   
-      <li><input type="checkbox" id="humch22">
-          <label for="humch22" value="40000">이전셋팅 원격(PC 4대 이내)</label></li>   
-      <li><input type="checkbox" id="humch23">
-          <label for="humch23" value="80000">소프트웨어 원격(PC 1대당)</label></li>   
-      <li><input type="checkbox" id="humch31">
-          <label for="humch31" value="80000">방문 셋팅</label></li>   
-      <li><input type="checkbox" id="humch32">
-          <label for="humch32" value="80000">공유기 교체</label></li>   
-      <li><input type="checkbox" id="humch33">
-          <label for="humch33" value="60000">허브 교체</label></li>   
-      <li><input type="checkbox" id="humch4a3">
-          <label for="humch4a3" value="80000">이전설치(A3복합기)</label></li>   
-      <li><input type="checkbox" id="humch5a4">
-          <label for="humch5a4" value="50000">이전설치(A4복합기)</label></li>   
+      <li><input type="checkbox" name="price66" id="price66" value="60000">
+          <label for="price66">출장기술료(A3복합기)</label></li>          
+      <li><input type="checkbox" name="price67" id="price67" value="40000">
+          <label for="price67">출장기술료(A4복합기)</label></li>   
+      <li><input type="checkbox" name="price68" id="price68" value="50000">
+          <label for="price68">출장기술료(M5526/P3145)</label></li>   
+      <li><input type="checkbox" name="price69" id="price69" value="30000">
+          <label for="price69">원격(PC 4대 이내)</label></li>   
+      <li><input type="checkbox" name="price70" id="price70" value="40000">
+          <label for="price70">이전셋팅 원격(PC 4대 이내)</label></li>   
+      <li><input type="checkbox" name="price71" id="price71" value="80000">
+          <label for="price71">소프트웨어 원격(PC 1대당)</label></li>   
+      <li><input type="checkbox" name="price72" id="price72" value="80000">
+          <label for="price72">방문 셋팅</label></li>   
+      <li><input type="checkbox" name="price73" id="price73" value="80000">
+          <label for="price73">공유기 교체</label></li>   
+      <li><input type="checkbox" name="price74" id="price74" value="60000">
+          <label for="price74">허브 교체</label></li>   
+      <li><input type="checkbox" name="price75" id="price75" value="80000">
+          <label for="price75">이전설치(A3복합기)</label></li>   
+      <li><input type="checkbox" name="price76" id="price76" value="50000">
+          <label for="price76">이전설치(A4복합기)</label></li>   
     </ul>
     </li>
     
+      <li class="accordion-category">
+    <input id="six" type="radio" name="a-toggle" style="display: none">      
+    <label for="six" class="accordion-title">등급할인</label>
+    <ul class="accordion-items">
+      <li><input type="checkbox" name="price77" id="price77" value="-30000">
+          <label for="price77">GOLD 할인</label></li>          
+      <li><input type="checkbox" name="price78" id="price78" value="-50000">
+          <label for="price78">VIP 할인</label></li>   
+    </ul>
+    </li>
   </ul>          
 
             
@@ -654,15 +665,7 @@
             
             
             
-            <div class="controls6">
-                <h3>추가 등급 할인 :
-                    <select id="discount" onChange="calculatePay()" name="price5" style="width: 150px">
-                        <option value="0">해당 없음</option>
-                        <option value="30000">GOLD</option>
-                        <option value="50000">VIP</option>
-                    </select>
-                </h3>
-            </div>
+
             <!--
             <h6 style="text-align: right"> ※ 할인금액은 만원 단위로 절삭 표기 </h6>
             <h6 style="text-align: right"> ※ VIP 추가 할인은 임대 2대 이상 혹은 임대료 15만원 이상일 시에만 적용 가능 </h6>
@@ -670,7 +673,7 @@
 
             <br><hr /><br><br>         
            <!-- <h6 style="text-align: right">※ 부가세 별도 가격입니다.</h6> -->
-
+           <!--
             <div class="controls7">
                 <h3>기본 금액 </h3>
                 <h3><input id="inputtotal" type="text" name="price10" readonly="readonly"  > 원</h3>
@@ -691,10 +694,10 @@
             </div>
 
             <br>
-
+            -->
             <div class="total">
                 <h3> 최종 월 렌탈료 </h3>
-                <h3><input id="input" type="text" name="price30" readonly="readonly"> 원</h3>
+                <h3><input type="text" name="total" id="total" value="0" readonly="readonly"> 원</h3>
             </div>
         </form>
     </div>
@@ -702,45 +705,22 @@
     <script language="JavaScript">
         
         
-        function calculatePay() {
-            //체크박스 현상기수리
-            var price1 = parseInt(document.mypay.viewch1.value) || 0; 
-            
-            //흑백추가
-            var price2 = parseInt(document.mypay.price2.value) || 0;
-            
-            //컬러추가
-            var price3 = parseInt(document.mypay.price3.value) || 0;
-            
-            //약정기간추가
-            var price4 = parseInt(document.mypay.price4.value) || 0;
-            
-            //금액당할인
-            var price7 = parseInt(document.mypay.price7.value) || 0;
-            
-            //추가할인
-            var price5 = parseInt(document.mypay.price5.value) || 0;
-            
-            //팩스 추가
-            var price6 = parseInt(document.mypay.price6.value) || 0;
+        function Calculator(){
+            let total = Number(document.getElementById("total").defaultValue);
 
-            // 기본 금액
-            var baseAmount = price1 + price2 + price3 + price4 + price6;
-            
-            // 기본 할인 금액
-            var basicdiscountAmount = baseAmount * price7 / 100;
-            
-            // 총 할인 금액
-            var discountAmount = basicdiscountAmount + price5;
-            
-            // 최종 금액 계산
-            var finalAmount = baseAmount - Math.floor(discountAmount/10000) * 10000;
+            for(let i=1; i<=78; i++){
+                let chkbox = document.getElementById("price"+i);
+                if(chkbox.checked){
+                    total += Number(chkbox.value);
+                }
+                document.getElementById("total").value = total;
+            }
 
-            // 결과 출력
-            document.mypay.price10.value = price1;  // 기본 금액baseAmount;
-            document.mypay.price20.value = Math.floor(discountAmount/10000) * 10000; //할인 금액
-            document.mypay.price30.value = finalAmount; // 최종 금액
         }
+        for(let i = 1; i <= 78; i++){
+                let check = document.getElementById("price"+i);
+                check.onclick = Calculator;
+            }
 
         
     </script>
